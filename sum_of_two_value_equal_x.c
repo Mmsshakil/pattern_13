@@ -4,6 +4,7 @@ int main()
     int n;
     scanf("%d", &n);
     int arr[n], match;
+    int flag = 0; // this flag variable use to print the not found outside of the for loop
 
     for (int i = 0; i < n; i++)
     {
@@ -19,8 +20,15 @@ int main()
             if (number == match)
             {
                 printf("Found: %d + %d = %d", arr[i], arr[j], match);
+                flag++;
+                break;
             }
         }
+    }
+
+    if (flag == 0)
+    {
+        printf("Not Found");
     }
 
     return 0;
