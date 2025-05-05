@@ -1,4 +1,4 @@
-        // for (size_t i = 0; i < count; i++)
-        // {
-        //     /* code */
-        // }
+    for (int k = 0; k < i; k++)
+        {
+            printf(" ");
+        }
